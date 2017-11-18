@@ -1,0 +1,35 @@
+.productItem {
+  height: 300px;
+  width: 225px;
+  background: #fff;
+  margin: 12px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 13px;
+  }
+
+  &__price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    height: 125px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__feature {
+    font-size: 12px;
+    color: #777;
+  }
+}

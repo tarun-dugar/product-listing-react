@@ -1,0 +1,1 @@
+export default ['rating', 'price'];

@@ -1,0 +1,14 @@
+.productSortingFilters {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 30px;
+  font-size: 15px;
+
+  input[type="radio"] {
+    margin: 0 5px;
+  }
+}
+
+.productSortingFilter {
+  margin: 0 15px;
+}

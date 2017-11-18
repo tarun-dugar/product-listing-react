@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: "Helvetica";
+  color: #555;
+  background-color: #fcfcfc; 
+}
+
+input {
+  outline-style: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@import './ProductSearch/index';
+@import './shared/index';
