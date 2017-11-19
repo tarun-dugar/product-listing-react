@@ -1,13 +1,11 @@
 import React from 'react';
 
-import ProductSearch from './containers/ProductSearch';
+import ProductSearch from './ProductSearch';
 
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <ProductSearch />
-      </div>
+      <ProductSearch />
     );
   }
 }
