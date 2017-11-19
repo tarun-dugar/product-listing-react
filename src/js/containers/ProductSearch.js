@@ -9,7 +9,8 @@ import ProductSortingFilters from '../constants/ProductSortingFilters';
 class ProductSearch extends React.Component {
   state = {
     'searchFilterVal': '',
-    'selectedSortingFilter': ProductSortingFilters[0]
+    'selectedSortingFilter': ProductSortingFilters[0],
+    'selectedSortingOrder': 'asc'
   }
 
   onChangeSearchFilter = (searchFilterVal) => {
@@ -24,21 +25,30 @@ class ProductSearch extends React.Component {
     });
   }
 
+  onChangeSortingOrder = (selectedSortingOrder) => {
+    this.setState({
+      selectedSortingOrder
+    });
+  }
+
   render() {
     return (
       <div className="productSearch">
         <div className="productSearch__input">
           <SearchInput 
-            onChange={this.onChangeSearchFilter} 
+            onChange={this.onChangeSearchFilter}
           />
         </div>
         <SortingFilters 
-          onChange={this.onChangeSortingFilter} 
+          onChangeFilter={this.onChangeSortingFilter} 
+          onChangeOrder={this.onChangeSortingOrder}
           selectedFilter={this.state.selectedSortingFilter}
+          selectedOrder={this.state.selectedSortingOrder}
         />
         <ItemsGrid 
           searchFilterVal={this.state.searchFilterVal}
           selectedSortingFilter={this.state.selectedSortingFilter}
+          selectedSortingOrder={this.state.selectedSortingOrder}
         />
       </div>
     );

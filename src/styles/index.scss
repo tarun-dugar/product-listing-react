@@ -1,15 +1,17 @@
+$theme-color: #6D6EEB;
+
 body {
   margin: 0;
   font-family: "Helvetica";
   color: #555;
-  background-color: #fcfcfc; 
+  background-color: #f8f8f8; 
 }
 
 input {
   outline-style: none;
 }
 
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+::-webkit-input-placeholder {
   color: #aaa;
   font-size: 14px;
   font-weight: 300;
@@ -30,6 +32,12 @@ ul {
 
 .flex-between {
   justify-content: space-between;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 

@@ -1,14 +1,40 @@
 .productSortingFilters {
   display: flex;
   justify-content: flex-end;
-  padding: 15px 30px;
-  font-size: 15px;
+  padding: 0 30px;
+  font-size: 14px;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  background: #fff;
+  align-items: stretch;
+  height: 50px;
 
-  input[type="radio"] {
-    margin: 0 5px;
+  &__label {
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+  }
+
+  &__order {
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+
+    &--selected {
+      color: $theme-color;
+    }
   }
 }
 
 .productSortingFilter {
-  margin: 0 15px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &--selected {
+    color: $theme-color;
+    border-bottom: 2px solid $theme-color;
+  }
 }

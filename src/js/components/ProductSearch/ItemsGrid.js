@@ -4,9 +4,9 @@ import Items from '../../constants/ProductItems';
 import Item from './Item';
 import { filterItems } from '../../utils/ProductSearch';
 
-const ItemsGrid = ({ searchFilterVal, selectedSortingFilter }) => {
+const ItemsGrid = ({ searchFilterVal, selectedSortingFilter, selectedSortingOrder }) => {
   const renderItems = () => {
-    const filteredItems = filterItems(Items, searchFilterVal, selectedSortingFilter);
+    const filteredItems = filterItems(Items, searchFilterVal, selectedSortingFilter, selectedSortingOrder);
     if (filteredItems.length > 0) {
       return filteredItems.map((item) => {
         return (
